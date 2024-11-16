@@ -6,7 +6,6 @@ import sqlite3
 from datetime import datetime, timedelta
 from pytz import timezone
 from calendar import monthrange
-from tkcalendar import Calendar
 
 root = Tk()
 root.title("Python: Online Attendance System")
@@ -265,7 +264,7 @@ def Submit():
             STUDENTNAME.set("")
             REGNO.set("")
             var.set("")
-            # Append submitted data to attendance_data list
+           Append submitted data to attendance_data list
             attendance_data.append((STUDENTNAME.get(), REGNO.get(), "Present" if var.get() == 1 else "Absent", selected_date))
 
 
